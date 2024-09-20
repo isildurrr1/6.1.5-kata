@@ -4,13 +4,126 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><%= htmlWebpackPlugin.options.title %></title>
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
 </head>
 
 <body>
-  <img src="./img/webpack.svg" alt="Webpack Logo" width="200px" />
-  <h1>Welcome to Webpack 4 starter </h1>
-  <h1>Welcome to Webpack 4 starter </h1>
+  <div class="page">
+    <header class="header">
+      <img src="./images/burger-icon.svg" alt="Иконка меню" class="header__icon">
+      <div class="header__line header__line_tablet"></div>
+      <img src="./images/logo.svg" alt="Логотип" class="header__logo">
+      <div class="header__tablet-icons">
+        <img src="./images/phone-icon.svg" alt="Иконка телефона" class="header__icon">
+        <img src="./images/chat-icon.svg" alt="Иконка чата" class="header__icon">
+        <img src="./images/profile-icon.svg" alt="Иконка профиля" class="header__icon">
+      </div>
+      <div class="header__line"></div>
+      <img src="./images/repair-icon.svg" alt="Иконка заявки" class="header__icon">
+      <img src="./images/checkstatus-icon.svg" alt="Иконка статуса" class="header__icon">
+    </header>
+    <main class="main"></main>
+    <section class="content">
+      <div class="main-title">
+        <div class="main-title__line"></div>
+        <h1 class="main-title__title">Услуги и сервисы</h1>
+        <div class="main-title__container">
+          <div class="main-title__element">
+            <p class="main-title__paragraph">Оставить заявку</p>
+            <img src="./images/repair-icon.svg" alt="Иконка заявки" class="main-title__icon">
+          </div>
+          <div class="main-title__element">
+            <p class="main-title__paragraph">Статус ремонта</p>
+            <img src="./images/checkstatus-icon.svg" alt="Иконка статуса" class="main-title__icon">
+          </div>
+        </div>
+      </div>
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__element menu__element_active">Ремонтируемые устройства </li>
+          <li class="menu__element">Ремонтируемые бренды</li>
+          <li class="menu__element">Цены на услуги</li>
+          <li class="menu__element">Адреса сервисных центров</li>
+          <li class="menu__element">Специальные цены</li>
+          <li class="menu__element">Отзывы</li>
+        </ul>
+      </nav>
+      <article class="article">
+        <div class="article__container">
+          <p class="article__paragraph">
+            Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете
+            отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+            <br><br>
+            Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое
+            количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь,
+            советуют нас родным и близким.
+          </p>
+          <div class="read-more">
+            <span class="read-more__icon"></span>
+            <span class="read-more__text">Читать далее</span>
+          </div>
+        </div>
+        <img src="./images/main_image.jpg" alt="Обложка сайта" class="article__image">
+      </article>
+    </section>
+    <!-- <div class="section-title">Ремонт техники различных брендов</div> -->
+    <section class="brands-container">
+      <div class="section-title">Ремонт техники различных брендов</div>
+      <ul class="brands-container__list">
+        <li class="brands-container__element">
+          <img src="./images/lenovo.png" alt="Линево" class="brands-container__image">
+          <img src="./images/go.svg" alt="Иконка вперед" class="brands-container__go">
+        </li>
+        <li class="brands-container__element">
+          <img src="./images/samsung.png" alt="Самсунг" class="brands-container__image">
+          <img src="./images/go.svg" alt="Иконка вперед" class="brands-container__go">
+        </li>
+        <li class="brands-container__element">
+          <img src="./images/apple.png" alt="Эппл" class="brands-container__image">
+          <img src="./images/go.svg" alt="Иконка вперед" class="brands-container__go">
+        </li>
+        <li class="brands-container__element">
+          <img src="./images/viewsonic.png" alt="Вьюсоник" class="brands-container__image">
+          <img src="./images/go.svg" alt="Иконка вперед" class="brands-container__go">
+        </li>
+        <li class="brands-container__element">
+          <img src="./images/bosch.png" alt="Бош" class="brands-container__image">
+          <img src="./images/go.svg" alt="Иконка вперед" class="brands-container__go">
+        </li>
+        <li class="brands-container__element">
+          <img src="./images/hp.png" alt="Эйчпи" class="brands-container__image">
+          <img src="./images/go.svg" alt="Иконка вперед" class="brands-container__go">
+        </li>
+        <li class="brands-container__element">
+          <img src="./images/acer.png" alt="Эйсер" class="brands-container__image">
+          <img src="./images/go.svg" alt="Иконка вперед" class="brands-container__go">
+        </li>
+        <li class="brands-container__element">
+          <img src="./images/sony.png" alt="Сони" class="brands-container__image">
+          <img src="./images/go.svg" alt="Иконка вперед" class="brands-container__go">
+        </li>
+        <li class="brands-container__element">
+          <img src="./images/lenovo.png" alt="Линево" class="brands-container__image">
+          <img src="./images/go.svg" alt="Иконка вперед" class="brands-container__go">
+        </li>
+        <li class="brands-container__element">
+          <img src="./images/samsung.png" alt="Самсунг" class="brands-container__image">
+          <img src="./images/go.svg" alt="Иконка вперед" class="brands-container__go">
+        </li>
+        <li class="brands-container__element">
+          <img src="./images/apple.png" alt="Эппл" class="brands-container__image">
+          <img src="./images/go.svg" alt="Иконка вперед" class="brands-container__go">
+        </li>
+      </ul>
+      <div class="swiper-pagination" style="visibility: hidden;"></div>
+      <div class="read-more">
+        <span class="read-more__icon"></span>
+        <span class="read-more__text">Показать все</span>
+      </div>
+      </main>
+  </div>
 </body>
 
 </html>

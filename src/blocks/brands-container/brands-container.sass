@@ -1,0 +1,18 @@
+.brands-container
+  position: relative
+  padding-bottom: 24px
+  margin: 16px 16px
+  &::after
+    content: ""
+    text-align: right
+    position: absolute
+    top: 16px
+    right: 0
+    width: 24px
+    height: 72px
+    background: linear-gradient(to right, #F8F8F800, #F8F8F8 100%)
+    z-index: 1
+
+@media screen and (min-width: 880px)
+  .brands-container
+    margin: 32px 32px

@@ -33,7 +33,7 @@ module.exports = {
         }
       },
       {
-        test: /\.sass$/,
+        test: /\.(sa|sc|c)ss$/,
         use: [
           MiniCssExtractPlugin.loader,
           'css-loader',
@@ -42,20 +42,8 @@ module.exports = {
         ],
       },
       {
-        test: /\.(eot|ttf|woff|woff2)$/,
-        use: [
-          {
-            loader: 'file-loader?name=./fonts/[name].[ext]'
-          },
-        ]
-      },
-      {
-        test: /\.(svg|png|jpg|jpeg|webp)$/,
-        use: [
-          {
-            loader: 'file-loader?name=./static/[name].[ext]'
-          },
-        ]
+        test: /\.(png|svg|jpg|gif|woff(2)?|eot|ttf|otf)$/,
+        type: 'asset/resource'
       },
     ],
   },
