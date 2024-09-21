@@ -15,6 +15,10 @@ let techs = document.querySelector(".tech")
 let readMoreTechs = techs.querySelector(".read-more");
 let techList = document.querySelector(".tech__list");
 let techElements = document.querySelectorAll(".tech__element");
+// Селекторы секции стоимости
+let price = document.querySelector(".price")
+let priceList = document.querySelector(".price__list");
+let priceElements = document.querySelectorAll(".price__element");
 
 // Измеряем размер экрана
 const screenWidth = window.screen.width
@@ -46,6 +50,18 @@ const checkScreen = (screen) => {
       spaceBetween: 16,
       width: 240,
       height: 160,
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+    price.classList.add("swiper-container");
+    priceList.classList.add("swiper-wrapper");
+    priceElements.forEach(e => e.classList.add("swiper-slide"));
+    const priceSwiper = new Swiper('.price ', {
+      slidesPerView: 1,
+      spaceBetween: 16,
+      width: 260,
+      height: 200,
       pagination: {
         el: '.swiper-pagination',
       },
