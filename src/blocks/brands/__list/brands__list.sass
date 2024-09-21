@@ -1,0 +1,25 @@
+.brands__list
+  height: 160px
+  list-style: none
+  // margin: 16px 16px
+  padding: 0
+  &::-webkit-scrollbar
+    width: 0
+    height: 0
+
+@media screen and (min-width: 525px)
+  .brands__list
+    // margin: 16px 16px
+    display: flex
+    flex-wrap: wrap
+    gap: 16px 24px
+    overflow: hidden
+
+@media screen and (min-width: 754px)
+  .brands__list
+    gap: 16px 24px
+
+@media screen and (min-width: 1120px)
+  .brands__list
+    width: 100%
+    gap: 16px 32px
