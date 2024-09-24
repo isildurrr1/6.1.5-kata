@@ -1,5 +1,5 @@
 .footer
-  color: #7E7E82
+  color: $active-grey
   font-size: 14px
   line-height: 16px
   letter-spacing: 0.1px
@@ -24,4 +24,11 @@
     span:first-child
       text-align: start !important
     span:last-child
+      width: 330px
       text-align: end !important
+
+@media screen and (min-width: 880px)
+  .footer
+    margin-top: 66px
+    padding-left: 29px
+    padding-right: 35px

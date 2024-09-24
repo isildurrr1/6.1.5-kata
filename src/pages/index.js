@@ -1,4 +1,5 @@
 import './index.sass'
+import '../script/popup'
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 // Общая пагинация

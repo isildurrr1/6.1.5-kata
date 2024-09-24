@@ -70,5 +70,37 @@
 /* footer */
 @import ../blocks/footer/footer
 @import ../blocks/footer/__text/footer__text
+/* burger */
+@import ../blocks/burger/burger
+@import ../blocks/burger/__container/burger__container
+@import ../blocks/burger/__header/burger__header
+@import ../blocks/burger/__icon/burger__icon
+@import ../blocks/burger/__logo/burger__logo
+@import ../blocks/burger/__list/burger__list
+@import ../blocks/burger/__list-element/burger__list-element
+@import ../blocks/burger/__list-element/_active/burger__list-element_active
+@import ../blocks/burger/__footer/burger__footer
+@import ../blocks/burger/__footer-icons/burger__footer-icons
+@import ../blocks/burger/__lang-list/burger__lang-list
+@import ../blocks/burger/__lang/burger__lang
+@import ../blocks/burger/__mail/burger__mail
+@import ../blocks/burger/__phone/burger__phone
+@import ../blocks/burger/__lang/_active/burger__lang_active
+/* popup */
+@import ../blocks/popup/popup
+@import ../blocks/popup/__container/popup__container
+@import ../blocks/popup/__form/popup__form
+@import ../blocks/popup/__input/popup__input
+@import ../blocks/popup/__message/popup__message
+@import ../blocks/popup/__submit/popup__submit
+@import ../blocks/popup/__textarea/popup__textarea
+@import ../blocks/popup/__title/popup__title
+@import ../blocks/popup/__close/popup__close
+@import ../blocks/popup/__span/popup__span
+
 body
-  background-color: #F8F8F8
+  background-color: $bg-grey
+
+@media screen and (min-width: 1366px)
+  body
+    background-color: $bg-white

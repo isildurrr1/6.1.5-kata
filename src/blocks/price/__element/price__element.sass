@@ -1,6 +1,6 @@
 .price__element
   position: relative
-  background-color: #FFFFFF
+  background-color: $bg-white
   height: 200px !important
   box-sizing: border-box
   border-radius: 5px
@@ -17,7 +17,7 @@
     flex-direction: row
     height: 65px !important
     box-sizing: border-box
-    border-bottom: 1px solid #EAEAEA
+    border-bottom: 1px solid $border
     padding: 0 16px
     &:last-child
       border: none
@@ -25,3 +25,7 @@
       line-height: 64px
       &::before
         display: none
+
+@media screen and (min-width: 880px)
+  .price__element
+    padding: 0 23px

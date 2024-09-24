@@ -1,16 +1,16 @@
 .price
   position: relative
   padding-bottom: 24px
-  margin: 15px 8px 0 8px
+  margin: 15px 0 0 8px
   &::after
     content: ""
     text-align: right
     position: absolute
     bottom: 40px
-    right: -16px
+    right: 0
     width: 24px
     height: 200px
-    background: linear-gradient(to right, #F8F8F800, #F8F8F8 100%)
+    background: linear-gradient(to right, $bg-grey-gradient, $bg-grey)
     z-index: 1
 
 @media screen and (min-width: 520px)
@@ -19,3 +19,7 @@
     margin: 0 24px 0 24px !important
     &::after
       display: none
+
+@media screen and (min-width: 880px)
+  .price
+    margin: 0 32px 0 32px !important
