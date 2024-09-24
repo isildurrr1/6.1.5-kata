@@ -30,8 +30,8 @@
         </ul>
         <div class="burger__footer">
           <div class="burger__footer-icons">
-            <img src="./images/phone-icon.svg" alt="Иконка телефона" class="burger__icon">
-            <img src="./images/chat-icon.svg" alt="Иконка чата" class="burger__icon">
+            <img src="./images/phone-icon.svg" alt="Иконка телефона" class="burger__icon" id="open-phone-burger">
+            <img src="./images/chat-icon.svg" alt="Иконка чата" class="burger__icon" id="open-chat-burger">
             <img src="./images/profile-icon.svg" alt="Иконка профиля" class="burger__icon">
           </div>
           <p class="burger__mail">mail@cps.com</p>
@@ -44,18 +44,32 @@
         </div>
       </div>
     </section>
-    <div class="popup">
+    <div class="popup" id="chat">
       <div class="popup__container">
-        <button type="button" class="popup__close"></button>
+        <button type="button" class="popup__close" id="close-chat"></button>
         <h2 class="popup__title">Обратная связь</h2>
         <form action="#" class="popup__form">
           <input type="text" class="popup__input" placeholder="Имя">
           <input type="tel" class="popup__input" placeholder="Телефон">
           <input type="email" class="popup__input" placeholder="Электронная почта">
-          <textarea name="message" id="message" class="popup__textarea"></textarea>
-          <p class="popup__message">Нажимая “отправить”, вы даете согласие на обработку персональных данных и
-            соглашаетесь с нашей политикой конфиденциальности</p>
-          <button type="submit" class="popup__submit"></button>
+          <textarea name="message" id="message" class="popup__textarea" placeholder="Сообщение"></textarea>
+          <p class="popup__message">Нажимая “отправить”, вы даете согласие на 
+            <span class="popup__span">обработку персональных данных</span> и
+            соглашаетесь с нашей <span class="popup__span">политикой конфиденциальности</span></p>
+          <button type="submit" class="popup__submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+    <div class="popup" id="phone">
+      <div class="popup__container">
+        <button type="button" class="popup__close" id="close-phone"></button>
+        <h2 class="popup__title">Заказать звонок</h2>
+        <form action="#" class="popup__form">
+          <input type="tel" class="popup__input" placeholder="Телефон">
+          <p class="popup__message">Нажимая “отправить”, вы даете согласие на 
+            <span class="popup__span">обработку персональных данных</span> и
+            соглашаетесь с нашей <span class="popup__span">политикой конфиденциальности</span></p>
+          <button type="submit" class="popup__submit">Отправить</button>
         </form>
       </div>
     </div>
@@ -64,8 +78,8 @@
       <div class="header__line header__line_tablet"></div>
       <img src="./images/logo.svg" alt="Логотип" class="header__logo">
       <div class="header__tablet-icons">
-        <img src="./images/phone-icon.svg" alt="Иконка телефона" class="header__icon">
-        <img src="./images/chat-icon.svg" alt="Иконка чата" class="header__icon">
+        <img src="./images/phone-icon.svg" alt="Иконка телефона" class="header__icon" id="open-phone">
+        <img src="./images/chat-icon.svg" alt="Иконка чата" class="header__icon" id="open-chat">
         <img src="./images/profile-icon.svg" alt="Иконка профиля" class="header__icon">
       </div>
       <div class="header__line"></div>
